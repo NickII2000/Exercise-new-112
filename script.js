@@ -21,6 +21,10 @@ function myAnimation() {
 
     if (pos < 300) {
         requestAnimationFrame(myAnimation);
+    } else {
+        pos = 0;
+        elem.style.top = pos + "px";
+        elem.style.left = pos + 'px';
     }
 }
 
